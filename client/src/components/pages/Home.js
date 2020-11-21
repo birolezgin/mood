@@ -28,7 +28,7 @@ function Home() {
     return (
         
       <div>
-<WebcamModule />
+<WebcamModule /><br></br>
 
 <Container>
   <Row>

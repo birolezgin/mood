@@ -33,7 +33,7 @@ function WebcamModule() {
             screenshotFormat="image/jpeg"
             />
         </div>
-        <button type="button" class="btn btn-primary" onClick={capture}>Capture photo</button>
+        <button type="button" className="btn btn-primary" onClick={capture}>Capture photo</button>
         </div>
 
     );

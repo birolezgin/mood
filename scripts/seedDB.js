@@ -10,17 +10,32 @@ mongoose.connect(
 const songSeed = [
   {
     href: "https://www.youtube.com/watch?v=zdngjh5cy5E",
-    title: "Sad Songs "
+    title: "Sad Songs 1"
+  },
+  {
+    href: "https://www.youtube.com/watch?v=zdngjh5cy5E",
+    title: "Sad Songs 2"
+  },
+  {
+    href: "https://www.youtube.com/watch?v=zdngjh5cy5E",
+    title: "Sad Songs 3"
+  },
+  {
+    href: "https://www.youtube.com/watch?v=zdngjh5cy5E",
+    title: "Happy Songs 1"
+  },
+  {
+    href: "https://www.youtube.com/watch?v=zdngjh5cy5E",
+    title: "Happy Songs 2"
   },
   {
     href: "https://www.youtube.com/watch?v=vP_Bi4z65Wk",
-    title: "Happy Songs "
+    title: "Happy Songs 3"
   }
   
 ];
 
-db.Song
-  .remove({})
+db.Song.remove({})
   .then(() => db.Song.collection.insertMany(songSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");

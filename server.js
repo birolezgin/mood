@@ -5,6 +5,7 @@ const app = express();
 const passport = require("passport");
 const session = require("express-session")
 const routes = require("./routes");
+const apiRoutes = require("./routes/apiRoutes");
 
 
 //initializes mongoose connection;
@@ -18,6 +19,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use(routes);
+app.use("/api", apiRoutes);
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {

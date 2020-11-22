@@ -25,26 +25,24 @@ function Home() {
         .catch(err => console.log(err));
     };
   
-    return (
-        
-      <div>
-<WebcamModule /><br></br>
-
-<Container>
-  <Row>
-    <Col size="md-12">
-      <form>
-        <Container>
-          <Row>
-            <Col size="xs-9 sm-10">
-              <Input
+  return (
+    <div>
+      <WebcamModule /><br></br>
+      <Container>
+        <Row>
+          <Col size="md-12">
+           <form>
+            <Container>
+             <Row>
+               <Col size="xs-9 sm-10">
+                <Input
                 name="SongSearch"
                 value={songSearch}
                 onChange={handleInputChange}
                 placeholder="Search For a Song"
-              />
-            </Col>
-            <Col size="xs-3 sm-2">
+                />
+               </Col>
+          <Col size="xs-3 sm-2">
               <Button
                 onClick={handleFormSubmit}
                 type="success"
@@ -52,14 +50,14 @@ function Home() {
               >
                   Search
               </Button>
-            </Col>
-          </Row>
-        </Container>
-      </form>
-    </Col>
-  </Row>
-  <Row>
-    <Col size="xs-12">
+               </Col>
+             </Row>
+            </Container>
+           </form>
+          </Col>
+        </Row>
+        <Row>
+        <Col size="xs-12">
       {!songs.length ? (
         <h1 className="text-center">No Songs to Display</h1>
       ) : (

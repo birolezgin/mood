@@ -18,12 +18,12 @@ export function SongListItem({
     <li className="list-group-item">
       <Container>
         <Row>
-          <Col size="xs-8 sm-9">
+        <Col size="xs-2 sm-12">
             <h3>{title}</h3>
             <a rel="noreferrer noopener" target="_blank" href={href}>
               Go to song!
             </a>
-          </Col>
+        </Col>
         </Row>
       </Container>
     </li>
